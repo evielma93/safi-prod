@@ -107,7 +107,8 @@ class Query{
         NumeroAutorizacion,
         FechaAutorizacion,
         FORMAT(FechaCreacion, 'yyyy-MM-dd') AS FechaCreacion,
-        XmlOriginal
+        XmlOriginal,
+        documentoid
         from SafiBDDParametros..Fac_Comprobante_Historial 
 		inner join V1791297954001_SAFI_3..CXCDIR on SafiBDDParametros..Fac_Comprobante_Historial.PersonaId = V1791297954001_SAFI_3..CXCDIR.CodigoID
 		where V1791297954001_SAFI_3..CXCDIR.Clave = '${id}' `;
