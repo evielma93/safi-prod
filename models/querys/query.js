@@ -133,7 +133,7 @@ class Query{
     }
 
     getUges(){
-        return `select * from V1791297954001_SAFI_3..CNTCC where Padre = 0 `;
+        return `select * from V1791297954001_SAFI_3..CNTCC where Padre <> 0 AND PasivoCC = 'N' AND Estado = 'ACT' `;
     }
 
 }
